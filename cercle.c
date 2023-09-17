@@ -8,7 +8,7 @@ int main()
     double Aire; // Déclarez une variable pour stocker l'aire du cercle
     double Perimetre;
 
-    Aire = M_PI*rayon*rayon;
+    Aire = rayon*rayon*M_PI;
     Perimetre = 2*M_PI*rayon;
 
     printf("L'aire du cercle est :%lf\n",Aire); // Utilisez printf pour afficher la valeur de r

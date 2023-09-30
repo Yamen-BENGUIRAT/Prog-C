@@ -12,12 +12,12 @@ int main() {
         {" Grenoble", "VilleVerte"}
     };
 
-    float notesC[] = {
+    float notesC[2][2] = {
         {12,5}
         {11}
     };
 
-    float notesExploitation[] = {
+    float notesExploitation[2][2] = {
         {14}
         {8,3}
     };

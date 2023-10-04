@@ -2,11 +2,12 @@
 
 int main() {
 
+    struct etudiant{
 
+        char prenom[20];
+        char nom[20];
+        char address[30];
+        int notes[10];
+    };
 
-
-
-
-
-    
 }

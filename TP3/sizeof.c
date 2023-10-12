@@ -1,20 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-    printf("size of int is :%lu\n", sizeof (int) );
-    printf("size of int* is :%lu\n", sizeof (int*) );
-    printf("size of int** is : %lu\n", sizeof (int**));
-    printf("size of char* is : %lu\n", sizeof (char*));
-    printf("size of char** is : %lu\n", sizeof (char**));
-    printf("size of char*** is : %lu\n", sizeof (char***));
-    printf("size of float* is : %lu\n", sizeof (float*));
-    printf("size of float** is : %lu\n", sizeof (float**));
-    printf("size of float*** is : %lu\n", sizeof (float***));
-
-
-
-
+int main() {
+    printf("La taille de int est : %lu octets\n", sizeof(int));
+    printf("La taille de int* est : %lu octets\n", sizeof(int*));
+    printf("La taille de int** est : %lu octets\n", sizeof(int**));
+    printf("La taille de char* est : %lu octets\n", sizeof(char*));
+    printf("La taille de char** est : %lu octets\n", sizeof(char**));
+    printf("La taille de char*** est : %lu octets\n", sizeof(char***));
+    printf("La taille de float* est : %lu octets\n", sizeof(float*));
+    printf("La taille de float** est : %lu octets\n", sizeof(float**));
+    printf("La taille de float*** est : %lu octets\n", sizeof(float***));
+    
     return 0;
 }

@@ -13,8 +13,8 @@ calculs, crées des fonctions, mit en places des boucles, des conditions...
 Ainsi,ces premiers TP nous ont été utiles pour se familiariser avec l'outil, 
 et ainsi pouvoir comprendre les différents concepts et pouvoir travailler sur des 
 projets plus complexes à l'avenir.
-Nous allons donc voir en quoi ces exercices nous ont été utiles en sachant que leurs
-utilités sont décrites en commmentaires.
+Nous allons donc voir en quoi ces exercices nous ont été utiles en sachant que leurs 
+fonctionnalités sont décrites en commmentaires.
 
 TP 1
 

@@ -1,7 +1,7 @@
 /*
 Yamen BEN GUIRAT et Enzo TULISSI.
 20/09/23
-Programme qui convertit un nombre décimal en binaire.ss
+Programme qui convertit un nombre décimal en binaire.
 */
 
 

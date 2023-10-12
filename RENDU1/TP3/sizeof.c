@@ -1,7 +1,7 @@
 /* 
 Yamen BEN GUIRAT et Enzo TULISSI.
 04/10/23
-Programme qui consiste à déterminer la taille en octete des différents types de données.
+Programme qui consiste à déterminer la taille en octets des différents types de données.
 */
 
 #include <stdio.h>

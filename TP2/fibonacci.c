@@ -3,22 +3,28 @@
 int main() {
     int n;
 
-    printf("Nombre de termes pour la suite de Fibonacci : ");
+    // Demandez à l'utilisateur de saisir le nombre de termes à générer
+    printf("Entrez le nombre de termes de la suite de Fibonacci à générer : ");
     scanf("%d", &n);
 
-    int a = 0;
-    int b = 1;
+    // Déclarez les premiers deux termes de la suite
+    int terme_precedent = 0;
+    int terme_actuel = 1;
 
-    printf("Suite de Fibonacci :\n");
-    printf("%d\n%d\n", a, b);
+    // Affichez les deux premiers termes de la suite
+    printf("Suite de Fibonacci jusqu'à U%d : %d, %d", n, terme_precedent, terme_actuel);
 
+    // Calcul des termes suivants de la suite et affichage
     for (int i = 2; i < n; i++) {
-        int next = a + b;
-        printf("%d\n", next);
+        int terme_suivant = terme_precedent + terme_actuel;
+        printf(", %d", terme_suivant);
 
-        a = b;
-        b = next;
+        // Mettez à jour les termes précédents
+        terme_precedent = terme_actuel;
+        terme_actuel = terme_suivant;
     }
+
+    printf("\n");
 
     return 0;
 }

@@ -1,16 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    int a = 2;  
-    int b = 4;
+    // Déclarez les variables pour a, b et le résultat
+    int a = 2; // Remplacez par la valeur de votre choix
+    int b = 2; // Remplacez par la valeur de votre choix
+    int resultat = 1; // Initialisez le résultat à 1
 
-    int result = 1;
-
-    for (int i = 0; i < b; i++) {
-        result *= a;
+    // Vérifiez si b est négatif
+    if (b < 0) {
+        printf("Erreur : La puissance doit être un entier positif ou nul.\n");
+        return 1; // Sortez du programme avec un code d'erreur
     }
 
-    printf("Le résultat de %d élevé à la puissance %d est : %d\n", a, b, result);
+    // Calcul de la puissance en multipliant a par lui-même b fois
+    for (int i = 0; i < b; i++) {
+        resultat *= a;
+    }
 
-    return 0;
+    // Affichez le résultat
+    printf("%d^%d = %d\n", a, b, resultat);
+
+    return 0; // Terminez le programme avec succès
 }

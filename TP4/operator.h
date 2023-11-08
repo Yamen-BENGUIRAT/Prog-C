@@ -1,8 +1,21 @@
-void somme(int num1, int num2);
-void difference(int num1, int num2);
-void produit(int num1, int num2);
-void quotient(int num1, int num2);
-void modulo(int num1, int num2);
-void et(int num1, int num2);
-void ou(int num1, int num2);
-void negation(int num1);
+// Yamen BEN GUIRAT et Enzo Tulissi, Prog C //
+
+// 01/11/23 //
+
+
+
+int addition(int,int);
+
+int soustraction(int , int );
+
+int produit(int , int ); 
+
+int quotient(int , int );
+
+int modulo(int , int );    
+
+int ET(int , int );    
+
+int OU(int , int );
+    
+int negation(int , int );

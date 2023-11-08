@@ -1,41 +1,43 @@
+// Yamen BEN GUIRAT et Enzo Tulissi, Prog C //
+
+// 01/11/23 //
+
+
+
+
+#include <stdio.h>
 #include "operator.h"
 
-void somme(int num1, int num2) {
-    printf("Résultat de la somme : %d\n", num1 + num2);
+//implémentation des fonctions addition soustraction, produit, quotient, modulo, ET, OU, negation
+
+int addition(int num1, int num2) {
+    return num1 + num2;
 }
 
-void difference(int num1, int num2) {
-    printf("Résultat de la différence : %d\n", num1 - num2);
+int soustraction(int num1, int num2){
+    return  num1 - num2;
 }
 
-void produit(int num1, int num2) {
-    printf("Résultat du produit : %d\n", num1 * num2);
+int produit(int num1, int num2){
+    return num1*num2;
 }
 
-void quotient(int num1, int num2) {
-    if (num2 != 0) {
-        printf("Résultat du quotient : %d\n", num1 / num2);
-    } else {
-        printf("Erreur : division par zéro.\n");
-    }
+int quotient(int num1, int num2){
+    return num1/num2;
 }
 
-void modulo(int num1, int num2) {
-    if (num2 != 0) {
-        printf("Résultat du modulo : %d\n", num1 % num2);
-    } else {
-        printf("Erreur : division par zéro.\n");
-    }
+int modulo(int num1, int num2){
+    return num1%num2;
 }
 
-void et(int num1, int num2) {
-    printf("Résultat de l'opération ET : %d\n", num1 & num2);
+int ET(int num1, int num2){
+    return num1&&num2;
 }
 
-void ou(int num1, int num2) {
-    printf("Résultat de l'opération OU : %d\n", num1 | num2);
+int OU(int num1, int num2){
+    return num1 || num2;
 }
 
-void negation(int num1) {
-    printf("Résultat de la négation : %d\n", ~num1);
+int negation(int num1, int num2){
+    return ~num1;
 }

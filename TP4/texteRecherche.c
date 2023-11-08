@@ -4,14 +4,12 @@
 
 
 
-
 #include <stdio.h>
 // On inclut les fichiers dans lequel les fonctions sont définies : 
 #include "operator.h"
 #include "fichier.h" 
 #include <stdlib.h>
 #include <string.h>
-#include "liste.h"
 // #define stdin   __stdinp
 
 int main(){
@@ -22,8 +20,7 @@ int main(){
     char operation='+';
     int res;
 
-
-     switch (operation) {   //on switch en fonction de la valeur de la variable "operation"
+    switch (operation) {   //on switch en fonction de la valeur de la variable "operation"
         case '+':  res = addition(num1,num2);  // addition
             break;
         case '-':  res = soustraction(num1,num2);  // soustraction
@@ -39,11 +36,12 @@ int main(){
         case '|':  res = OU(num1,num2); // OU logique
             break;
         case '~':  res = negation(num1,num2);   //contraire (non x)
-            break;
+            brea
+            k;
     }
     printf("%d \n",res);
 
-    printf("====================EXO 2=====================\n \n \n");
+    printf("====================EXO 2 =====================\n \n \n");
     char action_utilisateur[3];
     printf("Voulez vous lire (l) ou ecrire (e) le fichier ? \n"); // Demande a l'utilisateur ce qu'il veut faire sur le fichier
     fgets(action_utilisateur, 3, stdin);
@@ -63,32 +61,5 @@ int main(){
     else { // Condition si jamais aucune des deux lettres n'est reconnue
         printf("Action non reconnue \n");
     }
-
-    printf("====================EXO 7=====================\n \n \n");
-    int max = 255;
-
-    // initialisation d'une couleur de la structure
-    struct couleur C_int = {
-        rand() % max,
-        rand() % max,
-        rand() % max,
-        (float)(rand() % max) / 255,
-    };
-    struct liste_couleurs precedant = {
-        C_int,
-        NULL};
-    // ajout des autres couleurs dans la structure
-    for (int i = 0; i < 10; i++)
-    {
-        struct couleur C_suivant = {
-            rand() % max,
-            rand() % max,
-            rand() % max,
-            (float)(rand() % max) / 256,
-        };
-        insertion(&C_suivant, &precedant);
-    };
-    // affichage de la structure liste_couleurs
-    parcours(&precedant);
     return 0;
 }
